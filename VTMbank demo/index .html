@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>广农商vtm首页demo</title>
+<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript">
+document.onmousemove=function (ev)
+{
+    var oEvent=ev||event;
+	return false;
+   
+};
+document.onmouseup=function (ev)
+{
+    var oEvent=ev||event;
+	return false;
+   
+};
+document.onmousedown=function (ev)
+{
+    var oEvent=ev||event;
+	return false;
+   
+};
+$(document).ready(function($){
+	$('#carousel').carousel({
+		width: 1920, 
+		height: 900, 
+		itemWidth:1300, 
+		horizontalRadius:700, 
+		verticalRadius:120, 
+		resize:false, 
+		mouseScroll:false, 
+		mouseDrag:true, 
+		scaleRatio:0.2, 
+		scrollbar:false, 
+		tooltip:true, 
+		mouseWheel:false, 
+		mouseWheelReverse:false
+	});	
+});
+
+// /*go to next page*/
+//window.onload=function(){
+//	  var oDiv=document.getElementById('carousel');
+//	  var oImg=oDiv.getElementsByTagName('img');
+//	  for(var i=0;i<oImg.length;i++){
+//		  oImg[i].onclick=function(){
+//			  self.location='index2.html'; 
+//			  }
+//		  }
+//	  }
+</script>
+</head>
+<body>
+	<div id="wide-wrapper">
+    	<div class="head">
+        	<div class="head">
+        		<div class="top">
+                    <div class="logo"></div>
+                    <div class="box_764"></div>
+                    <button class="help"></button>
+                    <div class="time">
+                       April 6, 2016 Wednesday 11: 35
+                    </div> 
+                    
+    			</div>
+    <div class="clean"></div>
+        </div>
+		<ul id="carousel" style="overflow: hidden;">
+			<li><img src="images/icon-assisant.png"/></li>
+			<li><img src="images/icon-debitcard.png" /></li>
+			<li><img src="images/icon-investment.png" /></li>
+			<li><img src="images/icon-signed.png" /></li>
+			<li><img src="images/icon-management.png" /></li>
+            <li><img src="images/icon-assisant.png"/></li>
+            <li><img src="images/icon-debitcard.png" /></li>
+            <li><img src="images/icon-investment.png" /></li>
+            <li><img src="images/icon-signed.png" /></li>
+            <li><img src="images/icon-management.png" /></li>
+            <li><img src="images/icon-assisant.png"/></li>
+            <li><img src="images/icon-debitcard.png" /></li>
+            <li><img src="images/icon-investment.png" /></li>
+            <li><img src="images/icon-signed.png" /></li>
+            <li><img src="images/icon-management.png" /></li>
+		</ul>
+	</div>
+    </div>
+</body>
+</html>
